@@ -20,11 +20,12 @@ const server = http.createServer((req, res) => {
       res.write(data);
       res.end();
     });
-  }else if (page == '/www.twitter.com/ACole893'){
-      res.writeHead(301,
-        {Location: 'https://twitter.com/ACole893'+newRoom});
-      res.end();
-    }
+  }
+  // else if (page == '/www.twitter.com/ACole893'){
+  //     res.writeHead(301,
+  //       {Location: 'https://twitter.com/ACole893'+newRoom});
+  //     res.end();
+  //   }
   else if (page == '/space') {
     fs.readFile('space/index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
@@ -162,11 +163,11 @@ const server = http.createServer((req, res) => {
       res.end();
     });
   }
-  else if (page == '/https://acolee.netlify.app/'){
-    res.writeHead(301,
-      {Location: 'https://acolee.netlify.app/'+newRoom});
-    res.end();
-  }
+  // else if (page == '/https://acolee.netlify.app/'){
+  //   res.writeHead(301,
+  //     {Location: 'https://acolee.netlify.app/'+newRoom});
+  //   res.end();
+  // }
 
 
   // else if (page == '/otherpage') {
