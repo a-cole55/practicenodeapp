@@ -33,6 +33,7 @@ const server = http.createServer((req, res) => {
       res.end();
     });
   }
+
   else if (page == '/space/style.css'){
     fs.readFile('space/style.css', function(err, data) {
       res.write(data);
@@ -46,7 +47,7 @@ const server = http.createServer((req, res) => {
     });
   }
 
-  
+
   else if (page == '/beauty') {
     fs.readFile('beauty/index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
