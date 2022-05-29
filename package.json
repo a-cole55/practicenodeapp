@@ -1,0 +1,20 @@
+{
+  "name": "practicenodeapp",
+  "version": "1.0.0",
+  "description": "practice hosting app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-cole55/practicenodeapp.git"
+  },
+  "author": "acole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-cole55/practicenodeapp/issues"
+  },
+  "homepage": "https://github.com/a-cole55/practicenodeapp#readme"
+}
