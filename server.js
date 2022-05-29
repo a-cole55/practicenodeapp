@@ -227,7 +227,7 @@ const server = http.createServer((req, res) => {
     });
   }
 });
-const PORT = process.env.PORT || 8000;
+const PORT = (process.env.PORT || 8000);
 server.listen(PORT, function(){
   console.log('Chat server running')
 });
