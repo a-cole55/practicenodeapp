@@ -283,7 +283,7 @@ html{
 }
 form{
     width:58em;
-    border:2px solid black;
+    border:2px solid #C0BBB7;
     padding:3% 5%;
     margin-bottom: 5%;
     background-color: rgb(25, 24, 24);
@@ -293,7 +293,7 @@ form{
 input{
     width:20em;
     height:2.5em;
-    border:2px solid black;
+    border:2px solid #C0BBB7;
     margin:1.5% 3% 2% 0;
     background-color: rgb(249, 247, 247);
 }
@@ -337,7 +337,7 @@ select{
     width:8em;
     margin: 5% 5% 0 5%;
     border-radius: 0.5em;
-    border:2px solid lightgrey;
+    /* border:2px solid lightgrey; */
     cursor: pointer;
     font-weight: bold;
 }
