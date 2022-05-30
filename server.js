@@ -89,14 +89,14 @@ const server = http.createServer((req, res) => {
       res.write(data);
       res.end();
     });
-  }else if (page == '/glamourb/assets/glamourb8.jpg'){
-    fs.readFile('glamourb/assets/glamourb8.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/beauty8.jpg'){
+    fs.readFile('glamourb/assets/beauty8.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/glamourb/assets/glamourb2.jpg'){
-    fs.readFile('glamourb/assets/glamourb2.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/beauty2.jpg'){
+    fs.readFile('glamourb/assets/beauty2.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.write(data);
       res.end();
@@ -107,45 +107,45 @@ const server = http.createServer((req, res) => {
       res.write(data);
       res.end();
     });
-  }else if (page == '/glamourb/assets/glamourb3.jpg'){
-    fs.readFile('glamourb/assets/glamourb3.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/beauty3.jpg'){
+    fs.readFile('glamourb/assets/beauty3.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
   }
-  else if (page == '/glamourb/assets/glamourb5.jpg'){
-    fs.readFile('glamourb/assets/glamourb5.jpg', function(err, data) {
+  else if (page == '/glamourb/assets/beauty5.jpg'){
+    fs.readFile('glamourb/assets/beauty5.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/glamourb/assets/glamourb1.jpg'){
-    fs.readFile('glamourb/assets/glamourb1.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/beauty1.jpg'){
+    fs.readFile('glamourb/assets/beauty1.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/glamourb/assets/glamourb7.jpg'){
-    fs.readFile('glamourb/assets/glamourb7.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/beauty7.jpg'){
+    fs.readFile('glamourb/assets/beauty7.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/glamourb/assets/glamourb13.jpg'){
-    fs.readFile('glamourb/assets/glamourb13.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/beauty13.jpg'){
+    fs.readFile('glamourb/assets/beauty13.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/glamourb/assets/glamourb4.jpg'){
-    fs.readFile('glamourb/assets/glamourb4.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/beauty4.jpg'){
+    fs.readFile('glamourb/assets/beauty4.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/glamourb/assets/glamourb12.jpg'){
-    fs.readFile('glamourb/assets/glamourb12.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/beauty12.jpg'){
+    fs.readFile('glamourb/assets/beauty12.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
