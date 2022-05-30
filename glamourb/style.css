@@ -446,7 +446,7 @@ footer span > a{
         margin:0;
     }
     .main{
-        background: url(Header_BG_image.jpg) no-repeat;
+        background: url(assets/Header_BG_image.jpg) no-repeat;
         background-size: cover;
         background-position:left center;
         height:50em;
