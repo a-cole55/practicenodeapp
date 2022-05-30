@@ -1,0 +1,602 @@
+/* $laptop:1020px;
+$tablet:724px;
+$mobile:480px */
+
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    text-transform: uppercase;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Gideon Roman', 'Source Sans Pro', sans-serif;
+    font-size:62.5%;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #C0BBB7;
+    overflow: hidden;
+    z-index: 9;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: #C0BBB7;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+}
+
+.main{
+    background: url(/beauty/assets/Header_BG_image.jpg) no-repeat center center ;
+    background-size:cover;
+    height:80em;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.main h1{
+    color:white;
+    font-size:9rem;
+    margin:5% 5% 0 0;
+    font-weight:normal;
+    text-shadow: 1px 1px #C0BBB7;
+}
+.main span{
+    color:white;
+    opacity: 0.5;
+    margin:0 13% 10% 0;
+    font-size:2rem;
+    display:block;
+}
+#hours{
+    /* writing-mode: vertical-lr;
+    text-orientation: sideways; */
+    margin:0 5% 0 0;
+    font-size:2rem;
+    color:white;
+}
+#services{
+    height: 20em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family:'Source Sans Pro', sans-serif;
+
+}
+.menuItems{
+    width:25%;
+    /* margin:150px 0px 150px 50px; */
+}
+.menuItems img{
+    width: 9em;
+    height: 9em;
+}
+.menuItems h3{
+    font-size: 1.75rem;
+}
+/* .menuItems p{
+    padding-top: 10px;
+    text-transform: none;
+    line-height: 1.5em;
+    font-weight:500;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height:50em;
+    background-color: rgb(243, 240, 240);
+}
+#two{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+}
+#two h2{
+    font-size: 5rem;
+    /* padding:70px 0px 10px 200px; */
+    margin:0;
+}
+#two p{
+    font-size:1.65rem;
+    font-family:'Source Sans Pro', sans-serif;
+    line-height:1.5em;
+    text-transform: none;
+}
+/* #two button{
+} */
+#about img{
+    width:30%;
+}
+.three{
+    height:70em;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.team img{
+    height:38em;
+    width:30em;
+}
+.nameBox{
+    width:24em;
+    height:8em;
+    background-color: black;
+    color:white;
+    margin-left:3em;
+    position:relative;
+    bottom:4em;
+}
+.team span{
+    display:block;
+    text-align: center;
+    padding-top:1em;
+}
+.name{
+    margin-top:0.5em;
+    font-size:2rem;
+}
+.team span + span{
+    font-size:1.5rem;
+    margin-top:0;
+    opacity:.95;
+}
+
+#lookbook{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.last{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    margin-top:0;
+}
+.last h3{
+    font-size:6rem;
+    margin:5% 0 0 0;
+   
+}
+.last h4{
+    font-size:6rem;
+    margin:0;
+}
+.lookbook{
+    width:80%;
+    height:100em;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.lookbook .smallImg{
+    height:35em;
+    width:35em;
+    padding:0.5% 0 0.5% 0;
+}
+.lookbook .longImg{
+    height:55em;
+    width:35em;
+    padding:0.5% 0.5% 0.5% 0;
+}
+.pop-out
+{
+    transition: transform .5s;
+}
+
+.pop-out:hover
+{
+    -ms-transform: scale(1.25, 1.25);
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+}
+#emptyBox{
+    background-color: black;
+    display:inline;
+    height:33.5em;
+    width:34.5em;
+    padding:1% 0.5% 1% 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#emptyBox h3{
+    color:white;
+    font-size:2.5rem;
+    font-family:'Source Sans Pro', sans-serif;
+    opacity:0.9;
+    width:80%;
+    text-align: center;
+}
+#bookNow{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#bookNow h4{
+    font-size: 6rem;
+    margin-bottom: 3%;
+}
+form{
+    width:58em;
+    border:2px solid black;
+    padding:3% 5%;
+    margin-bottom: 5%;
+    background-color: rgb(25, 24, 24);
+    opacity: 0.95;
+    color:white;
+}
+input{
+    width:20em;
+    height:2.5em;
+    border:2px solid black;
+    margin:1.5% 3% 2% 0;
+    background-color: rgb(249, 247, 247);
+}
+
+label{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 38% 10% 0;
+    height:2.5em;
+    letter-spacing: 0.1em;
+}
+#phone{
+    margin-right: 0;
+}
+#tel{
+    margin-right: 0;
+}
+#emailLabel{
+    margin-right:37%;
+}
+#service{
+    margin-right: 0;
+}
+#calendar{
+    width:20em;
+}
+select{
+    width:20.8em;
+    height:3em;
+    border:2px solid black;
+}
+#calendar, #time{
+    width: 20.3em;
+    margin-right: 0;
+}
+#calendar{
+    margin-right:3%;
+}
+#reset, #submit{
+    height:3em;
+    width:8em;
+    margin: 5% 5% 0 5%;
+    border-radius: 0.5em;
+    border:2px solid lightgrey;
+    cursor: pointer;
+    font-weight: bold;
+}
+#reset:hover, #submit:hover{
+    background-color:#C0BBB7;
+    color:white;
+
+}
+#btns{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color:#C0BBB7;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family:'Source Sans Pro', sans-serif;
+}
+footer h3{
+    margin-bottom:0.25%;
+    font-size:1.5rem;
+}
+footer span > a{
+    color:white;
+}
+.contact{
+    font-size:1.5rem;
+}
+#socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2%;
+}
+#socials img{
+    width:3em;
+    margin:0 1.5em 1em 1em;
+}
+#copyright{
+    font-weight: bold;
+    font-size:1.2rem;
+}
+@media all and (max-width:1020px){
+    .main{
+        height:73em;
+    }
+    .main h1{
+        font-size:7rem;
+        margin-bottom: 5%;
+    }
+    .main span{
+        opacity: 0.8;
+    }
+    #two{
+        width: 50%;
+        margin: 5%;
+    }
+    #two h2{
+        font-size:5rem;
+    }
+    .lookbook{
+        width:800px;
+        height:680px;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left:0;
+    }
+    .lookbook .smallImg{
+        height:250px;
+        width:250px;
+    }
+    .lookbook .longImg{
+        height:390px;
+        width:250px;
+        /* padding:10px 10px 10px 0px; */
+    }
+    #emptyBox{
+        height:230px;
+        width:240px;
+        padding:20px 10px 0px 0px;
+    }
+    #emptyBox h3{
+        font-size:2rem;
+        opacity:0.9;
+        width:80%;
+        text-align: center;
+    }
+}
+@media all and (max-width:724px){
+    body{
+        /* padding:20px; */
+        display: flex;
+        flex-direction:column;
+        width:auto;
+        box-sizing: border-box;
+        margin:0;
+    }
+    .main{
+        background: url(Header_BG_image.jpg) no-repeat;
+        background-size: cover;
+        background-position:left center;
+        height:50em;
+        /* display:flex;
+        justify-content: flex-start;
+        align-self: flex-end; */
+    }
+    .main h1{
+        color:white;
+        font-size:4em;
+        padding:90% 10% 0 0;
+        font-weight:normal;
+        margin:0px;
+    }
+    .main span{
+        color:white;
+        padding:5% 0 0 0;
+        font-size:1.2em;
+        display:block;
+        opacity:.98;
+    }
+    #hours{
+        padding:0px;
+        font-size:14px;
+        color:white;
+        opacity: .5;
+    }
+    #services{
+        height: 19em;
+        /* margin: 5% 0 0 0;
+        text-align: center; */
+    }
+    .menuItems{
+        margin-right:5%;
+    }
+    .menuItems img{
+        width: 5em;
+        height: 5em;
+    }
+    .menuItems > h3{
+        font-size: 1.75rem;
+    }
+    #about{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    #two{
+        width: 90%;
+        margin: 5%;
+    }
+    #two h2{
+        font-size:4rem;
+        /* text-align: right; */
+    }
+    /* #two p{
+        text-align: left;
+    } */
+    #about img{
+        display:none;
+    }
+    .three{
+        margin:15% 0 3% 0;
+        height:40em;
+    }
+    .team{
+        width:33%;
+        padding:0;
+        margin-right: 0;
+
+    }
+    .team img{
+        height:25em;
+        width:15em;
+    }
+    .nameBox{
+        width:100px;
+        height:70px;
+        background-color: black;
+        color:white;
+        margin-left:20px;
+        position:relative;
+        bottom:20px;
+    }
+    .nameBox > span{
+        font-size: 1.4em;
+    }
+    .team span{
+        display:block;
+        text-align: center;
+        padding-top:5px;
+    }
+    .team > span{
+        margin-top:10px;
+    }
+    .team span + span{
+        font-size:10px;
+    }
+    .last{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        text-align: center;
+    }
+    .last h3{
+        font-size:3.6rem;
+        margin:8% 0 0 4%;
+       
+    }
+    .last h4{
+        font-size:4rem;
+        margin:0 0 0 4%;
+    }
+    .lookbook{
+        width:42em;
+        height:55em;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left:0;
+    }
+    .lookbook .smallImg{
+        height:18em;
+        width:14em;
+        padding:1% 0 0 0;
+    }
+    .lookbook .longImg{
+        height:31em;
+        width:14em;
+        padding:1% 0.5% 1% 0;
+    }
+    #emptyBox{
+        height:17.6em;
+        width:13.5em;
+        padding:1% 1% 0 0;
+    }
+    #emptyBox h3{
+        font-size:2rem;
+        opacity:0.9;
+        width:80%;
+        text-align: center;
+    }
+    .contact{
+        font-size:1.5rem;
+    }
+    #socials img{
+        width:2em;
+        margin-right: 1em;
+    }
+    #copyright{
+        font-weight: bold;
+        font-size:1.2rem;
+        margin-bottom: 2%;
+    }
+}

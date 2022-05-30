@@ -48,116 +48,116 @@ const server = http.createServer((req, res) => {
 
 
   else if (page == '/beauty') {
-    fs.readFile('beauty/index.html', function(err, data) {
+    fs.readFile('glamourb/index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end();
     });
   }
-  else if (page == '/beauty/style.css'){
-    fs.readFile('beauty/style.css', function(err, data) {
+  else if (page == '/glamourb/style.css'){
+    fs.readFile('glamourb/style.css', function(err, data) {
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/main.js'){
-    fs.readFile('beauty/main.js', function(err, data) {
+  }else if (page == '/glamourb/main.js'){
+    fs.readFile('glamourb/main.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/new-instagram-logo-white-border-icon-png-large.png'){
-    fs.readFile('beauty/assets/new-instagram-logo-white-border-icon-png-large.png', function(err, data) {
+  }else if (page == '/glamourb/assets/new-instagram-logo-white-border-icon-png-large.png'){
+    fs.readFile('glamourb/assets/new-instagram-logo-white-border-icon-png-large.png', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/service1.png'){
-    fs.readFile('beauty/assets/service1.png', function(err, data) {
+  }else if (page == '/glamourb/assets/service1.png'){
+    fs.readFile('glamourb/assets/service1.png', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/service2.png'){
-    fs.readFile('beauty/assets/service2.png', function(err, data) {
+  }else if (page == '/glamourb/assets/service2.png'){
+    fs.readFile('glamourb/assets/service2.png', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/service3.png'){
-    fs.readFile('beauty/assets/service3.png', function(err, data) {
+  }else if (page == '/glamourb/assets/service3.png'){
+    fs.readFile('glamourb/assets/service3.png', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/beauty8.jpg'){
-    fs.readFile('beauty/assets/beauty8.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/glamourb8.jpg'){
+    fs.readFile('glamourb/assets/glamourb8.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/beauty2.jpg'){
-    fs.readFile('beauty/assets/beauty2.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/glamourb2.jpg'){
+    fs.readFile('glamourb/assets/glamourb2.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/Header_BG_image.jpg'){
-    fs.readFile('beauty/assets/Header_BG_image.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/Header_BG_image.jpg'){
+    fs.readFile('glamourb/assets/Header_BG_image.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/beauty3.jpg'){
-    fs.readFile('beauty/assets/beauty3.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/glamourb3.jpg'){
+    fs.readFile('glamourb/assets/glamourb3.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
   }
-  else if (page == '/beauty/assets/beauty5.jpg'){
-    fs.readFile('beauty/assets/beauty5.jpg', function(err, data) {
+  else if (page == '/glamourb/assets/glamourb5.jpg'){
+    fs.readFile('glamourb/assets/glamourb5.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/beauty1.jpg'){
-    fs.readFile('beauty/assets/beauty1.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/glamourb1.jpg'){
+    fs.readFile('glamourb/assets/glamourb1.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/beauty7.jpg'){
-    fs.readFile('beauty/assets/beauty7.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/glamourb7.jpg'){
+    fs.readFile('glamourb/assets/glamourb7.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/beauty13.jpg'){
-    fs.readFile('beauty/assets/beauty13.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/glamourb13.jpg'){
+    fs.readFile('glamourb/assets/glamourb13.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/beauty4.jpg'){
-    fs.readFile('beauty/assets/beauty4.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/glamourb4.jpg'){
+    fs.readFile('glamourb/assets/glamourb4.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/beauty12.jpg'){
-    fs.readFile('beauty/assets/beauty12.jpg', function(err, data) {
+  }else if (page == '/glamourb/assets/glamourb12.jpg'){
+    fs.readFile('glamourb/assets/glamourb12.jpg', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpg'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/f_logo_RGB-White_144.png'){
-    fs.readFile('beauty/assets/f_logo_RGB-White_144.png', function(err, data) {
+  }else if (page == '/glamourb/assets/f_logo_RGB-White_144.png'){
+    fs.readFile('glamourb/assets/f_logo_RGB-White_144.png', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.write(data);
       res.end();
     });
-  }else if (page == '/beauty/assets/twitter-logo.png'){
-    fs.readFile('beauty/assets/twitter-logo.png', function(err, data) {
+  }else if (page == '/glamourb/assets/twitter-logo.png'){
+    fs.readFile('glamourb/assets/twitter-logo.png', function(err, data) {
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.write(data);
       res.end();
